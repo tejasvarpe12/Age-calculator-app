@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="dates">
+        <form id="ageForm" class="form">
+          <label>
+            D a y <br />
+            <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required/>
+          </label>
+          <label>
+            M o n t h <br />
+            <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" required/> 
+          </label>
+          <label>
+            Y e a r <br />
+            <input type="number" id="year" name="year" min="0001" max="2024" required placeholder="YYYY" />
+          </label>
+          <button type="submit"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </form>
+        <hr>
+      </div>
+      <div class="result">
+        <p><span id="years" class="dot-line number">--</span> years</p> 
+        <p><span id="months" class="dot-line number">--</span> months</p> 
+        <p><span id="days" class="dot-line number">--</span> days</p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
